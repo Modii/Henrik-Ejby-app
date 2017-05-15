@@ -17,17 +17,12 @@
  * under the License.
  */
 
-$('#Load').load('https://maps.googleapis.com/maps/api/js?key=AIzaSyD1n_OOlrgNhCtMC9ixBf_DiMkA7J2TrdY&sensor=true');
-
 var app = {
     // Application Constructor
     initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-    },
+          document.addEventListener('deviceready', initializeMap, false);
+    }
   }
-  initialize: function() {
-      document.addEventListener('deviceready', initializeMap, false);
-  },
 
   function initializeMap() {
     var mapOptions = {
@@ -36,7 +31,7 @@ var app = {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+}
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:
