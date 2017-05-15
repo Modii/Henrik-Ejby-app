@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+$('#Load').load('https://maps.googleapis.com/maps/api/js?key=AIzaSyD1n_OOlrgNhCtMC9ixBf_DiMkA7J2TrdY&sensor=true');
+
 var app = {
     // Application Constructor
     initialize: function() {
