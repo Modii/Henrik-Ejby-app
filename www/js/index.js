@@ -1,4 +1,4 @@
-/*
+  /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -21,6 +21,18 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
+  }
+  initialize: function() {
+      document.addEventListener('deviceready', initializeMap, false);
+  },
+
+  function initializeMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(43.069452, -89.411373),
+        zoom: 11,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     // deviceready Event Handler
     //
