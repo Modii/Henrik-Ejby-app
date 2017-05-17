@@ -10,6 +10,22 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 43.069452, lng: -89.411373},
+    zoom: 8
+  });
+  var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(43.069452, -89.411373),
+      map: map,
+      title: "This is a marker!",
+      animation: google.maps.Animation.DROP
+  });
+}
+
+
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('about', function (page) {
     // run createContentPage func after link was clicked

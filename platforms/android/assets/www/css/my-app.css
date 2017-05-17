@@ -1,0 +1,9 @@
+html, body, #map
+{
+
+}
+#map
+{
+    width: 100%;
+        height: 90%;
+}
