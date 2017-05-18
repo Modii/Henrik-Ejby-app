@@ -1,20 +1,40 @@
-html, body, #map
-{
 
-}
 #map
 {
     width: 100%;
-        height: 90%;
+        height: 95%;
 }
 
 
-.navbar {
-	background: #1d1d1d;
-	height: 70px;
+.navbar,
+.toolbar {
+	background: #1d1d1d !important;
+	height: 70px !important;
+	border-color: #1d1d1d;
+	font-color: #b1b1b1 !important;
+}
+
+.logo,
+.login,
+.toolbar-inner a {
+	color: #b1b1b1 !important;
+}
+
+.logo {
+	margin-left: 10px !important;
+	margin-right: auto !important;	
+}
+
+.login {
+	margin-left: auto !important;
+	margin-right: 25px !important;
 }
 
 .icon.icon-bars {
 	height: 40px !important;
 	width: 40px !important;
+}
+
+.page-content {
+	padding-top: 70px !important;
 }
