@@ -22,6 +22,14 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-intent href="market:*" />
+    <icon density="ldpi" src="img/icon/icon-ldpi.png" />
+    <icon density="mdpi" src="img/icon/icon-mdpi.png" />
+    <icon density="hdpi" src="img/icon/icon-hdpi.png" />
+    <icon density="xhdpi" src="img/icon/icon-xhdpi.png" />
+    <icon density="xxhdpi" src="img/icon/icon-xxhdpi.png" />
+    <icon density="xxxhdpi" src="img/icon/icon-xxxhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
 </widget>

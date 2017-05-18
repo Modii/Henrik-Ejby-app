@@ -10,7 +10,15 @@
         "spec": "latest",
         "type": "tag"
       },
+<<<<<<< HEAD
       "C:\\Program Files\\testcordovaapp\\node_modules"
+=======
+<<<<<<< HEAD
+      "C:\\Users\\Christoffer\\Documents\\GitHub\\cordovatestapp\\node_modules"
+=======
+      "f:\\cordovatestapp\\node_modules"
+>>>>>>> da7d62e856c527ddcf67be6c3bdbaa854c79f822
+>>>>>>> cb175a55366bf700b68a3b3522254728fe0284ca
     ]
   ],
   "_from": "cordova-plugin-geolocation@latest",
@@ -45,7 +53,15 @@
   "_shasum": "1dd00023d1f1a2ce330f8767ed08f7b738fe7184",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-geolocation",
+<<<<<<< HEAD
   "_where": "C:\\Program Files\\testcordovaapp\\node_modules",
+=======
+<<<<<<< HEAD
+  "_where": "C:\\Users\\Christoffer\\Documents\\GitHub\\cordovatestapp\\node_modules",
+=======
+  "_where": "f:\\cordovatestapp\\node_modules",
+>>>>>>> da7d62e856c527ddcf67be6c3bdbaa854c79f822
+>>>>>>> cb175a55366bf700b68a3b3522254728fe0284ca
   "author": {
     "name": "Apache Software Foundation"
   },
