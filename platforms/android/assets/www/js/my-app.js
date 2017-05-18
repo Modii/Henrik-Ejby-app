@@ -10,20 +10,57 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-
+/*
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 43.069452, lng: -89.411373},
+    center: {lat: 55.001, lng: 11.981},
     zoom: 8
   });
   var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(43.069452, -89.411373),
+      position: new google.maps.LatLng(55.001383, 11.981929),
       map: map,
       title: "This is a marker!",
       animation: google.maps.Animation.DROP
   });
 }
+*/
+var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 55.001, lng: 11.981},
+          zoom: 8
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
 
 
 // Callbacks to run specific code for specific pages, for example for About page:
