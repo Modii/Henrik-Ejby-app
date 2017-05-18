@@ -29,4 +29,7 @@
     <icon density="xxhdpi" src="img/icon/icon-xxhdpi.png" />
     <icon density="xxxhdpi" src="img/icon/icon-xxxhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
 </widget>
