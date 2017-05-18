@@ -45,8 +45,8 @@
         <icon density="xxhdpi" src="www/img/icon/icon-xxhdpi.png" />
         <icon density="xxxhdpi" src="www/img/icon/icon-xxxhdpi.png" />
     </platform>
+    <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-console" spec="^1.0.7" />
     <plugin name="cordova-plugin-geolocation" spec="^2.4.3" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <engine name="android" spec="~6.2.3" />
 </widget>
