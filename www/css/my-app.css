@@ -9,12 +9,12 @@ html, body, #map
 }
 
 
-	.navbar {
-		background: #1d1d1d;
-		height: 70px;
-	}
+.navbar {
+	background: #1d1d1d;
+	height: 70px;
+}
 
-	.icon.icon-bars {
-		height: 40px !important;
-		width: 100% !important;
-	}
+.icon.icon-bars {
+	height: 40px !important;
+	width: 40px !important;
+}
