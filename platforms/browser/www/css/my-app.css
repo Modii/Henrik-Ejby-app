@@ -21,8 +21,8 @@
 }
 
 .logo {
-	margin-left: 10px !important;
-	margin-right: auto !important;	
+	margin-left: -25px !important;
+	margin-right: auto !important;
 }
 
 .login {
@@ -33,6 +33,8 @@
 .icon.icon-bars {
 	height: 40px !important;
 	width: 40px !important;
+	margin-left: -10px !important;
+	margin-right: auto !important;
 }
 
 .page-content {
