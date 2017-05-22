@@ -60,19 +60,26 @@
 }
 
 .indstillinger, .kontakt, .soegekriterier {
-	height: 50px !important;
-	width: 50px !important;
+	height: 40px !important;
+	width: auto !important;
 }
 
 .indstillinger img, .kontakt img, .soegekriterier img {
-	height: 50px !important;
-	width: 50px !important;
+	height: 40px !important;
+	width: auto !important;
 }
 
+.indstillinger, .indstillinger img {
+	margin-left: 80px !important;
+}
 
+.kontakt, .kontakt img {
+	margin-right: 10px !important;
+}
 
-
-
+.soegekriterier, .soegekriterier img {
+	margin-left: 5px !important;
+}
 
 
 
