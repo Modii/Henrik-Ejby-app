@@ -10,6 +10,12 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+$$('.panel-close').on('click', function () {
+    var animated = false;
+    myApp.closePanel(animated);
+});
+
+
 /*
 var map;
 function initMap() {
@@ -27,10 +33,17 @@ function initMap() {
 */
 var map, infoWindow;
       function initMap(jQuery) {
+
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 55.001, lng: 11.981},
+          zoom: 12,
+          mapTypeControlOptions: {
+          mapTypeIds: ['hybrid']
+      }
         });
-        map.setZoom(12);
+
+        map.mapTypes.set('hybrid');
+        map.setMapTypeId('hybrid');
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
