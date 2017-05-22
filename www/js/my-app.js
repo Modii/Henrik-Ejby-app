@@ -35,6 +35,7 @@ var map, infoWindow;
       function initMap(jQuery) {
 
         map = new google.maps.Map(document.getElementById('map'), {
+          disableDefaultUI: true,
           center: {lat: 55.001, lng: 11.981},
           zoom: 12,
           mapTypeControlOptions: {
