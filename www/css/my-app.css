@@ -29,6 +29,7 @@
 .logo img {
 	height: 40px !important;
 	width: auto !important;
+	margin-left: 40px !important;
 }
 
 .login {
