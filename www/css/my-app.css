@@ -86,5 +86,15 @@
 
 
 
+/* Kontakt */
 
+	.submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	}
+
+	.submenu li a {
+    display: block !important;
+	}
 
