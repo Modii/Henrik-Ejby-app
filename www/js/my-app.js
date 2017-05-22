@@ -42,7 +42,6 @@ var map, infoWindow;
           mapTypeIds: ['hybrid']
       }
         });
-
         map.mapTypes.set('hybrid');
         map.setMapTypeId('hybrid');
         infoWindow = new google.maps.InfoWindow;
