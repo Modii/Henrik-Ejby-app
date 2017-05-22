@@ -29,8 +29,8 @@ var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 55.001, lng: 11.981},
-          zoom: 8
         });
+        map.setZoom(12);
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
@@ -42,7 +42,7 @@ var map, infoWindow;
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('Her er du.');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
