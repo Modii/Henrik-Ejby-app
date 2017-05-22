@@ -5,6 +5,9 @@
         height: 96%;
 }
 
+li, a {
+	color: #b1b1b1 !important;
+}
 
 .navbar,
 .toolbar {
@@ -83,6 +86,11 @@
 
 /* Kontakt */
 
+	.submenu {
+		text-align: center !important;
+		font-weight: bold !important;
+	}
+
 	.submenu ul {
     list-style-type: none;
     margin: 0;
@@ -92,24 +100,35 @@
 	.submenu li, .submenu a {
     display: inline;
     width: 60px;
-    padding: 20px !important;
+    padding: 10px !important;
+	}
+
+.henrik img, .per img, .line img {
+		float: left !important;
+		width: 33% !important;
 	}
 
 	.henrik, .per, .line, .henrik img, .per img, .line img {
-		display: inline !important;
-		padding: 4px !important;
-		height: 160px !important;
-		width: auto !important;
-		margin-bottom: -9px !important;
+		display: inline-block !important;
+		padding: 2px !important;
+		height: auto !important;
+		width: 100% !important;
+		margin-bottom: -7px !important;
+		position: center !important;
 	}
 
-	.submenu-images {
+	.submenu1, .submenu2, .submenu3 {
+		display: inline-block !important;
+	}
+
+	.submenu {
+		display: block;
+   		margin: auto;
 		background: #f9f9f9 !important;
 		border-width: 1px;
 		border-bottom-width: 1px;
 		border-bottom-color: #1d1d1b;
 		border-bottom-style: solid;
-		width: 100%;
 	}
 
 	.contact-text {
