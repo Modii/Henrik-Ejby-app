@@ -29,6 +29,7 @@
 .logo img {
 	height: 40px !important;
 	width: auto !important;
+	margin-left: 40px !important;
 }
 
 .login {
@@ -59,24 +60,72 @@
 }
 
 .indstillinger, .kontakt, .soegekriterier {
-	height: 50px !important;
-	width: 50px !important;
+	height: 40px !important;
+	width: auto !important;
 }
 
 .indstillinger img, .kontakt img, .soegekriterier img {
-	height: 50px !important;
-	width: 50px !important;
+	height: 40px !important;
+	width: auto !important;
 }
 
+.indstillinger, .indstillinger img {
+	margin-left: 80px !important;
+}
 
+.kontakt, .kontakt img {
+	margin-right: 10px !important;
+}
 
+.soegekriterier, .soegekriterier img {
+	margin-left: 5px !important;
+}
 
+/* Kontakt */
 
+	.submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	}
 
+	.submenu li, .submenu a {
+    display: inline;
+    width: 60px;
+    padding: 20px !important;
+	}
 
+	.henrik, .per, .line, .henrik img, .per img, .line img {
+		display: inline !important;
+		padding: 4px !important;
+		height: 160px !important;
+		width: auto !important;
+		margin-bottom: -9px !important;
+	}
 
+	.submenu-images {
+		background: #f9f9f9 !important;
+		border-width: 1px;
+		border-bottom-width: 1px;
+		border-bottom-color: #1d1d1b;
+		border-bottom-style: solid;
+		width: 100%;
+	}
 
+	.contact-text {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
 
+	.contact-info b {
+		display: inline-block !important;
+	}
 
+	.contact-info, .contact-info p {
+		line-height: 1 !important;
+	}
 
-
+	.contact-info b, .contact-info p {
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}

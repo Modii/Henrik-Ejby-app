@@ -12,6 +12,7 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
   </head>
+
   <body>
 
     <!-- Status bar overlay for fullscreen mode-->
@@ -27,7 +28,12 @@
     <!-- Right panel with cover effect-->
     <div class="panel panel-right panel-cover">
       <div class="content-block">
-        <p>Right panel content goes here</p>
+        <a href="index.html"><p>Forside</p>
+        <a href="#"><p>Min side</p>
+        <a href="indstillinger.html"><p>Indstillinger</p>
+        <a href="soegekriterier.html"><p>Søgekriterier</p>
+        <a href="#"><p>Boliger</p>
+        <a href="kontakt.html"><p>Kontakt</p>
       </div>
     </div>
     <!-- Views-->
@@ -38,10 +44,10 @@
         <div class="navbar">
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-            <div class="logo"> <img src="img/logo.png"> </div>
+            <div class="logo"> <a href="index.html"> <img src="img/lille-logo.png"> </div>
             <div class="menu">
               <!-- Right link contains only icon - additional "icon-only" class-->
-              <a href="#" data-panel="right" class="link icon-only open-panel"> <img src="img/app_menu_knap.png" class="icon icon-bars"></i></a>
+              <a href="#" data-panel="right" class="link icon-only open-panel"> <img src="img/burger_menu.png" class="icon icon-bars"></i></a>
             </div>
           </div>
         </div>
@@ -95,9 +101,9 @@
         <!-- Bottom Toolbar-->
         <div class="toolbar">
           <div class="toolbar-inner">
-            <a href="soegekriterier.html" class="soegekriterier"><img src="img/search_ikon.png"></a>
-            <a href="indstillinger.html" class="indstillinger"><img src="img/Settings.png"></a>
-            <a href="kontakt.html" class="kontakt"><img src="img/kontakt.png"></a>
+            <a href="soegekriterier.html" class="soegekriterier"><img src="img/search_icon2.png"></a>
+            <a href="indstillinger.html" class="indstillinger"><img src="img/Settings3.png"></a>
+            <a href="kontakt.html" class="kontakt"><img src="img/kontakt3.png"></a>
           </div>
         </div>
       </div>
@@ -105,7 +111,8 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1n_OOlrgNhCtMC9ixBf_DiMkA7J2TrdY&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1n_OOlrgNhCtMC9ixBf_DiMkA7J2TrdY&callback=initMap" async defer></script>
   </body>
 </html>

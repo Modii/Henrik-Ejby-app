@@ -2,25 +2,200 @@
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Top Navbar-->
 <div class="navbar">
-  <div class="navbar-inner">
-    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">Form</div>
-    <div class="right">
-      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-    </div>
-  </div>
-</div>
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="logo"> <a href="index.html"> <img src="img/lille-logo.png"> </div>
+            <div class="menu">
+              <!-- Right link contains only icon - additional "icon-only" class-->
+              <a href="#" data-panel="right" class="link icon-only open-panel"> <img src="img/burger_menu.png" class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
 <div class="pages">
   <!-- Page, data-page contains page name-->
   <div data-page="form" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="content-block-title">Form Example</div>
+      <div class="content-block-title">SØGEKRITERIER</div>
       <div class="list-block">
         <ul>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
+                <div class="item-title label">BOLIGTYPE</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">PRIS</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">VÆRELSER</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">ETAGER</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">BOLIGAREAL</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">GRUNDAREAL</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">ENERGI KLASSE</div>
+                <div class="item-input">
+                  <div class="range-slider">
+                    <input type="range" min="0" max="100" value="50" step="0.1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Supermarkede</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Børnehave</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Skole</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Skov</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Sø</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Nær ved Strand</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+<div class="content-block">
+        <div class="row">
+          <div class="col-50"><input type="submit" value="Gem" class="button button-big button-fill color-green"/></div>
+          <div class="col-50"><a href="index.html" class="button button-big button-fill color-red">Nulstil</a></div>
+        </div>
+      </div>
+
+
+  <!-- Alt herunder skal ikke med   -->
+
+
+
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
                 <div class="item-title label">Name</div>
                 <div class="item-input">
                   <input type="text" placeholder="Your name"/>
@@ -30,7 +205,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">E-mail</div>
                 <div class="item-input">
                   <input type="email" placeholder="E-mail"/>
@@ -40,7 +215,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">URL</div>
                 <div class="item-input">
                   <input type="url" placeholder="URL"/>
@@ -50,7 +225,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Password</div>
                 <div class="item-input">
                   <input type="password" placeholder="Password"/>
@@ -60,7 +235,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Phone</div>
                 <div class="item-input">
                   <input type="tel" placeholder="Phone"/>
@@ -70,7 +245,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Gender</div>
                 <div class="item-input">
                   <select>
@@ -83,7 +258,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Birth date</div>
                 <div class="item-input">
                   <input type="date" placeholder="Birth day" value="2014-04-30"/>
@@ -93,7 +268,7 @@
           </li>
           <li>
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Switch</div>
                 <div class="item-input">
                   <label class="label-switch">
@@ -118,7 +293,7 @@
           </li>
           <li class="align-top">
             <div class="item-content">
-              <div class="item-inner"> 
+              <div class="item-inner">
                 <div class="item-title label">Textarea</div>
                 <div class="item-input">
                   <textarea></textarea>
@@ -130,10 +305,8 @@
       </div>
       <div class="content-block">
         <div class="row">
-          <div class="col-50"><a href="#" class="button button-big button-fill color-red">Cancel</a></div>
-          <div class="col-50">
-            <input type="submit" value="Submit" class="button button-big button-fill color-green"/>
-          </div>
+          <div class="col-50"><input type="submit" value="Gem" class="button button-big button-fill color-green"/></div>
+          <div class="col-50"><a href="#" class="button button-big button-fill color-red">Nulstil</a></div>
         </div>
       </div>
       <div class="content-block-title">Checkbox group</div>

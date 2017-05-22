@@ -26,11 +26,11 @@ function initMap() {
 }
 */
 var map, infoWindow;
-      function initMap() {
+      function initMap(jQuery) {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 55.001, lng: 11.981},
-          zoom: 8
         });
+        map.setZoom(12);
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
@@ -42,7 +42,7 @@ var map, infoWindow;
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('Her er du.');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
@@ -70,6 +70,15 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
+
+
+myApp.onPageInit('index', function (page) {
+  var mapOptions = {
+    zoom: 12,
+  };
+  map = new google.maps.Map($$(page.container).find('#map')[0], mapOptions);
+  initMap();
+})
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
@@ -99,3 +108,5 @@ function createContentPage() {
     );
 	return;
 }
+
+/* JQuery below */
