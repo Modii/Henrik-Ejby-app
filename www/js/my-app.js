@@ -92,7 +92,8 @@ myApp.onPageInit('index', function (page) {
     zoom: 12,
     mapTypeControlOptions: {
     mapTypeIds: ['hybrid']
-  };
+  }
+}
   map = new google.maps.Map($$(page.container).find('#map')[0], mapOptions);
   initMap();
 })
