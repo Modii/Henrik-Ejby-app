@@ -1,17 +1,24 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
-module.exports = [];
-module.exports.metadata =
+module.exports = [
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "runs": true
+    }
+];
+module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-console": "1.0.7",
-    "cordova-plugin-whitelist": "1.3.2",
-
-    "cordova-plugin-compat": "1.0.0",
-    "cordova-plugin-geolocation": "2.4.3"
-
-    "cordova-plugin-geolocation": "2.4.3",
-    "cordova-plugin-compat": "1.0.0"
-
+    "cordova-plugin-splashscreen": "4.0.3"
 }
 // BOTTOM OF METADATA
 });
