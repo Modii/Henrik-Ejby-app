@@ -91,21 +91,53 @@ li, a {
 
 /* Søoegekriterier */
 
-.item-title.label {
-	width: 75% !important;
-	text-align: left !important;
+.searchswitch1 {
+  width: 50% !important;
+  text-align: left !important;
+  position: relative !important;
+  float: left !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.searchswitch2 {
+  width: 50% !important;
+  text-align: right !important;
+  position: relative !important;
+  margin-right: auto !important;
+  float: right !important;
+  margin-left: 0 !important;
+  padding-top: 5px !important;
 }
 
 .list-block {
 	   margin: 0px 0 !important;
 }
+.item-slidesearch {
+    width: 100% !important;
+    text-align: center !important;
+    padding-left: 7px !important;
+    margin: 0px 0 !important;
+    padding-bottom: 15px !important;
+}
+.item-inner {
+  display: inline-block !important;
+}
 
+.search-inner {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+/*
 .checkbox {
 	position: relative !important;
 	float: right !important;
-	margin-left: auto !important; 
+	margin-left: auto !important;
 	margin-right: 0 !important;
 }
+*/
 
 
 /* Kontakt */
