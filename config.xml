@@ -15,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="TopActivityIndicator" value="white"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
     <platform name="ios">
         <icon height="180" src="www/img/icon/icon-60@3x.png" width="180" />
         <icon height="87" src="www/img/icon/Icon-Small@3x.png" width="87" />
@@ -38,7 +38,6 @@
         <icon height="100" src="www/img/icon/icon-50@2x.png" width="100" />
         <icon height="167" src="www/img/icon/icon-83.5@2x.png" width="167" />
     </platform>
-
     <platform name="android">
         <icon density="ldpi" src="www/img/icon/icon-ldpi.png" />
         <icon density="mdpi" src="www/img/icon/icon-mdpi.png" />
@@ -47,12 +46,11 @@
         <icon density="xxhdpi" src="www/img/icon/icon-xxhdpi.png" />
         <icon density="xxxhdpi" src="www/img/icon/icon-xxxhdpi.png" />
     </platform>
-
     <platform name="android">
         <splash density="" src="res/screen/Android/drawable/screen.png" />
         <splash density="hdpi" src="res/screen/Android/drawable-hdpi/screen.png" />
         <splash density="land" src="res/screen/Android/drawable-land/screen.png" />
-        <splash density="land-hdpi" src="res/screen/Android/drawable-land-hdpi/land-hdpi.png" />
+        <splash density="land-hdpi" src="res/screen/Android/drawable-land-hdpi/screen.png" />
         <splash density="land-ldpi" src="res/screen/Android/drawable-land-ldpi/screen.png" />
         <splash density="land-mdpi" src="res/screen/Android/drawable-land-mdpi/screen.png" />
         <splash density="land-xhdpi" src="res/screen/Android/drawable-land-xhdpi/screen.png" />
@@ -64,29 +62,30 @@
         <splash density="xxhdpi" src="res/screen/Android/drawable-xxhdpi/screen.png" />
         <splash density="xxxhdpi" src="res/screen/Android/drawable-xxxhdpi/screen.png" />
     </platform>
-
     <platform name="ios">
-    <!-- There are two mechanisms for showing launch images.
-      -- Legacy method (supports all devices except iPad Pro 12.9):
-      -- Note: Images are determined by width and height. The following are supported -->
-    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
-    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="res/screen/ios/Default-568h@2x~iphone_640x1136.png" width="640" height="1136"/>
-    <splash src="res/screen/ios/Default-Landscape~ipad_1024x748.png" width="1024" height="748"/>
-    <splash src="res/screen/ios/Default-Landscape~ipad_1024x768.png" width="1024" height="768"/>
-    <splash src="res/screen/ios/Default-Landscape@2x~ipad_2048x1496.png" width="2048" height="1496"/>
-    <splash src="res/screen/ios/Default-Landscape@2x~ipad_2048x1536.png" width="2048" height="1536"/>
-    <splash src="res/screen/ios/Default~ipad.png" width="1536" height="2008"/>
-    <splash src="res/screen/ios/Default-Portrait@2x~ipad_1536x2048.png" width="1536" height="2048"/>
-    <splash src="res/screen/ios/Default-Portrait@2x~ipad_1536x2008.png" width="1536" height="2008"/>
-    <splash src="res/screen/ios/Default.png" width="768" height="1004"/>
-    <splash src="res/screen/ios/Default-Portrait~ipad_768x1024.png" width="768" height="1024"/>
-    <splash src="res/screen/ios/Default-750@2x~iphone6-portrait_750x1334.png" width="750" height="1334"/>
-    <splash src="res/screen/ios/Default-750@2x~iphone6-landscape_1334x750.png" width="1334" height="750"/>
-    <splash src="res/screen/ios/Default-1242@3x~iphone6s-portrait_1242x2208.png" width="1242" height="2208"/>
-    <splash src="res/screen/ios/Default-1242@3x~iphone6s-landscape_2208x1242.png" width="2208" height="1242"/>
-</platform>
-
+        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone_640x1136.png" width="640" />
+        <splash height="748" src="res/screen/ios/Default-Landscape~ipad_1024x748.png" width="1024" />
+        <splash height="768" src="res/screen/ios/Default-Landscape~ipad_1024x768.png" width="1024" />
+        <splash height="1496" src="res/screen/ios/Default-Landscape@2x~ipad_2048x1496.png" width="2048" />
+        <splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad_2048x1536.png" width="2048" />
+        <splash height="2008" src="res/screen/ios/Default~ipad.png" width="1536" />
+        <splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad_1536x2048.png" width="1536" />
+        <splash height="2008" src="res/screen/ios/Default-Portrait@2x~ipad_1536x2008.png" width="1536" />
+        <splash height="1004" src="res/screen/ios/Default.png" width="768" />
+        <splash height="1024" src="res/screen/ios/Default-Portrait~ipad_768x1024.png" width="768" />
+        <splash height="1334" src="res/screen/ios/Default-750@2x~iphone6-portrait_750x1334.png" width="750" />
+        <splash height="750" src="res/screen/ios/Default-750@2x~iphone6-landscape_1334x750.png" width="1334" />
+        <splash height="2208" src="res/screen/ios/Default-1242@3x~iphone6s-portrait_1242x2208.png" width="1242" />
+        <splash height="1242" src="res/screen/ios/Default-1242@3x~iphone6s-landscape_2208x1242.png" width="2208" />
+    </platform>
+    <platform name="windows">
+        <splash height="800" src="res/screen/windowsphone/Splashscreen.png" target="SplashScreen" width="480" />
+        <splash height="300" src="res/screen/windowsstore/Splashscreen-620x300.png" width="620" />
+        <splash height="420" src="res/screen/windowsstore/Splashscreen-868x420.png" width="868" />
+        <splash height="540" src="res/screen/windowsstore/Splashscreen-1116x540.png" width="1116" />
+    </platform>
     <splash src="www/splash.png" />
     <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-console" spec="^1.0.7" />

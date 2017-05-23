@@ -9,7 +9,9 @@ li, a {
 	color: #b1b1b1 !important;
 }
 
-
+.content-block {
+	margin-top: 0 !important;
+}
 
 .navbar,
 .toolbar {
@@ -86,9 +88,33 @@ li, a {
 	margin-left: 5px !important;
 }
 
+
+/* Søoegekriterier */
+
+.item-inner {
+	display: inline-block !important;
+}
+
+.list-block .item-title.label {
+	width: 100% !important;
+	text-align: center !important;
+}
+
+.checkbox {
+	position: right !important;
+}
+
+
 /* Kontakt */
 
 	.submenu {
+		overflow: hidden;
+		display: block;
+   		margin: auto;
+		border-width: 1px;
+		border-bottom-width: 1px;
+		border-bottom-color: #1d1d1b;
+		border-bottom-style: solid;
 		text-align: center !important;
 		font-weight: bold !important;
 	}
@@ -105,10 +131,7 @@ li, a {
     padding: 10px !important;
 	}
 
-.submenu img {
-		float: left !important;
-		width: 33% !important;
-	}
+
 
 	.henrik, .per, .line, .henrik img, .per img, .line img {
 		display: inline-block !important;
@@ -119,18 +142,14 @@ li, a {
 		position: center !important;
 	}
 
+.henrik, .per, .line {
+	margin-top: 10px !important;
+}
+
 	.submenu1, .submenu2, .submenu3 {
 		display: inline-block !important;
-	}
-
-	.submenu {
-		display: block;
-   		margin: auto;
-		background: #f9f9f9 !important;
-		border-width: 1px;
-		border-bottom-width: 1px;
-		border-bottom-color: #1d1d1b;
-		border-bottom-style: solid;
+		float: left !important;
+		width: 33% !important;
 	}
 
 	.contact-text {

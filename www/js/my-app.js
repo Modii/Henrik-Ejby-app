@@ -32,7 +32,7 @@ function initMap() {
 }
 */
 var map, infoWindow;
-      function initMap(jQuery) {
+      function initMap() {
 
         map = new google.maps.Map(document.getElementById('map'), {
           disableDefaultUI: true,
@@ -87,7 +87,11 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('index', function (page) {
   var mapOptions = {
+    disableDefaultUI: true,
+    center: {lat: 55.001, lng: 11.981},
     zoom: 12,
+    mapTypeControlOptions: {
+    mapTypeIds: ['hybrid']
   };
   map = new google.maps.Map($$(page.container).find('#map')[0], mapOptions);
   initMap();

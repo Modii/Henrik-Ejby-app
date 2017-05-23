@@ -16,4 +16,5 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <splash src="www/splash.png" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
 </widget>
