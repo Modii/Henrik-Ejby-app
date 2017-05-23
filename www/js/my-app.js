@@ -32,14 +32,14 @@ function initMap() {
 }
 */
 var map, infoWindow;
-      function initMap() {
-
+      function initMap(jQuery) {
         map = new google.maps.Map(document.getElementById('map'), {
           disableDefaultUI: true,
           center: {lat: 55.001, lng: 11.981},
           zoom: 12,
           mapTypeControlOptions: {
           mapTypeIds: ['hybrid']
+
       }
         });
         map.mapTypes.set('hybrid');
@@ -83,20 +83,16 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
-
-
 myApp.onPageInit('index', function (page) {
   var mapOptions = {
     disableDefaultUI: true,
-    center: {lat: 55.001, lng: 11.981},
     zoom: 12,
-    mapTypeControlOptions: {
-    mapTypeIds: ['hybrid']
-  }
+    draggable: true
 }
   map = new google.maps.Map($$(page.container).find('#map')[0], mapOptions);
-  initMap();
-})
+  initMap(jQuery);
+});
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
