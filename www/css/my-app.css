@@ -101,7 +101,9 @@ li, a {
 }
 
 .checkbox {
-	position: right !important;
+	position: relative !important;
+	margin-left:auto; 
+	margin-right:0;
 }
 
 
@@ -138,7 +140,7 @@ li, a {
 		padding: 2px !important;
 		height: auto !important;
 		width: 100% !important;
-		margin-bottom: -7px !important;
+		margin-bottom: -8px !important;
 		position: center !important;
 	}
 
