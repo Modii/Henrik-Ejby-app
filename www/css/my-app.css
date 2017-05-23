@@ -91,19 +91,20 @@ li, a {
 
 /* Søoegekriterier */
 
-.item-inner {
-	display: inline-block !important;
+.item-title.label {
+	width: 75% !important;
+	text-align: left !important;
 }
 
-.list-block .item-title.label {
-	width: 100% !important;
-	text-align: center !important;
+.list-block {
+	   margin: 0px 0 !important;
 }
 
 .checkbox {
 	position: relative !important;
-	margin-left:auto; 
-	margin-right:0;
+	float: right !important;
+	margin-left: auto !important; 
+	margin-right: 0 !important;
 }
 
 
