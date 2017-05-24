@@ -135,6 +135,15 @@ li, a {
   padding-bottom: 30px !important;
 }
 
+.button.button-fill.color-green {
+	background: #1d1d1b !important;
+}
+
+.button.button-fill.color-red {
+	background: #1d1d1b !important;
+	color: #fff !important;
+}
+
 /*
 .checkbox {
 	position: relative !important;
