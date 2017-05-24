@@ -1,4 +1,11 @@
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body>
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Top Navbar-->
 <div class="navbar">
@@ -16,13 +23,13 @@
   <div data-page="form" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="content-block-title">INDSTILLINGER</div>
+
       <div class="list-block">
         <ul>
           <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-title label">Navn</div>
+            <div class="item-content search-content">
+              <div class="item-inner search-inner">
+                <div class="item-title label item-slidesearch">Navn</div>
                 <div class="item-input">
                   <input type="text" placeholder="Dit navn"/>
                 </div>
@@ -31,9 +38,9 @@
           </li>
 
           <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-title label">E-mail</div>
+            <div class="item-content search-content">
+              <div class="item-inner search-inner">
+                <div class="item-title label item-slidesearch">E-mail</div>
                 <div class="item-input">
                   <input type="email" placeholder="E-mail"/>
                 </div>
@@ -42,9 +49,9 @@
           </li>
 
           <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-title label">Telefon</div>
+            <div class="item-content search-content">
+              <div class="item-inner search-inner">
+                <div class="item-title label item-slidesearch">Telefon</div>
                 <div class="item-input">
                   <input type="tel" placeholder="Telefon"/>
                 </div>
@@ -53,10 +60,10 @@
           </li>
 
           <li>
-            <div class="item-content">
-              <div class="item-inner">
-                <div class="item-title label">Push Notifikationer</div>
-                <div class="item-input">
+            <div class="item-content search-content">
+              <div class="item-inner search-inner">
+                <div class="item-title label searchswitch1">Push Notifikationer</div>
+                <div class="item-input searchswitch2">
                   <label class="label-switch">
                     <input type="checkbox"/>
                     <div class="checkbox"></div>
@@ -69,8 +76,8 @@
           <li>
             <div class="item-content">
               <div class="item-inner">
-                <div class="item-title label">Nyhedsbrev</div>
-                <div class="item-input">
+                <div class="item-title label searchswitch1">Nyhedsbrev</div>
+                <div class="item-input searchswitch2">
                   <label class="label-switch">
                     <input type="checkbox"/>
                     <div class="checkbox"></div>
@@ -91,3 +98,4 @@
     </div>
   </div>
 </div>
+</body>
