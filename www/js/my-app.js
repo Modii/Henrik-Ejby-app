@@ -123,9 +123,4 @@ function createContentPage() {
 	return;
 }
 
-
-var slider = document.getElementById('slider');
-
-noUiSlider.create()
-
 /* JQuery below */
