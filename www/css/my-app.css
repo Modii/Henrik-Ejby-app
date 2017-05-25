@@ -13,6 +13,20 @@ li, a {
 	margin-top: 0 !important;
 }
 
+.panel-right .content-block p {
+	font-size: 18px !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-top-style: solid;
+	padding-top: 25px !important;
+	padding-bottom: 5px !important;
+	padding-left: 20px !important;
+}
+
 .navbar,
 .toolbar {
 	background: #1d1d1b !important;
@@ -137,21 +151,19 @@ li, a {
 
 .button.button-fill.color-green {
 	background: #1d1d1b !important;
+	margin-top: 15px !important;
 }
 
 .button.button-fill.color-red {
 	background: #1d1d1b !important;
 	color: #fff !important;
+	margin-top: 15px !important;
 }
 
-/*
-.checkbox {
-	position: relative !important;
-	float: right !important;
-	margin-left: auto !important;
-	margin-right: 0 !important;
+.check-boxes .item-inner {
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
 }
-*/
 
 
 /* Kontakt */
