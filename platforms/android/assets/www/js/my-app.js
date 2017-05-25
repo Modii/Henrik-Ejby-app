@@ -1,4 +1,5 @@
-// Initialize your app
+
+
 var myApp = new Framework7();
 
 // Export selectors engine
@@ -32,14 +33,15 @@ function initMap() {
 }
 */
 var map, infoWindow;
-      function initMap(jQuery) {
-
+      function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           disableDefaultUI: true,
           center: {lat: 55.001, lng: 11.981},
           zoom: 12,
+          draggable: true,
           mapTypeControlOptions: {
           mapTypeIds: ['hybrid']
+
       }
         });
         map.mapTypes.set('hybrid');
@@ -83,15 +85,17 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
-
-
-myApp.onPageInit('index', function (page) {
+myApp.onPageBeforeInit('index', function(myApp){
   var mapOptions = {
+    disableDefaultUI: true,
     zoom: 12,
-  };
-  map = new google.maps.Map($$(page.container).find('#map')[0], mapOptions);
+    draggable: true
+}
+  //map = new google.maps.Map(document.getElementById('map'), mapOptions);
   initMap();
-})
+  google.maps.event.trigger(map, "resize");
+});
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
