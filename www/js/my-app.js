@@ -12,11 +12,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
   $$('.login-screen .list-button').on('click', function () {
-    var uname = $$('.login-screen input[name="username"]').val();
-    var pwd = $$('.login-screen input[name="password"]').val();
-    myApp.alert('Username: ' + uname + ', Password: ' + pwd, function () {
     myApp.closeModal('.login-screen');
-    });
 });
 
 
