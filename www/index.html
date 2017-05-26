@@ -15,16 +15,53 @@
 
   <body>
 
+  <div class="login-screen modal-in">
+         <div class="view">
+            <div class="page">
+               <div class="page-content login-screen-content">
+                  <div class="login-screen-title">Login Here</div>
+                  <form>
+                     <div class="list-block">
+                        <ul>
+                           <li class="item-content">
+                              <div class="item-inner">
+                                 <div class="item-title label">Username</div>
+                                 <div class="item-input">
+                                    <input type="text" name="username" placeholder="Enter the username">
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="item-content">
+                              <div class="item-inner">
+                                 <div class="item-title label">Password</div>
+                                 <div class="item-input">
+                                    <input type="password" name="password" placeholder="Enter the password">
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="list-block">
+                        <ul>
+                           <li><a href="#" class="item-link list-button">Log In</a></li>
+                        </ul>
+                        <div class="list-block-label">
+                           <p><a href="#" class="close-login-screen">Click here to close Login Screen</a></p>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+  </div>
+
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
-    </div>
+   
     <!-- Right panel with cover effect-->
     <div class="panel panel-right panel-cover panel-close">
       <div class="content-block">
@@ -59,46 +96,11 @@
             <div class="page-content">
 
               <div id="map"></div>
-              <div class="content-block-title">Velkommen</div>
-              <div class="content-block">
-                <div class="content-block-inner">
-                  <p>En nice Henrik Ejby app yo</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
-                </div>
-              </div>
-              <div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li><a href="about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="services.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="form.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a></li>
-                </ul>
-              </div>
-              <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
+
         <!-- Bottom Toolbar-->
         <div class="toolbar">
           <div class="toolbar-inner">
@@ -116,6 +118,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1n_OOlrgNhCtMC9ixBf_DiMkA7J2TrdY&callback=initMap" async defer></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+      <script>
 
   </body>
 </html>
