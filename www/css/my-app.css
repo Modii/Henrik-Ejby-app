@@ -120,7 +120,7 @@ li, a {
   	width: auto !important;
   	margin-right: 5px !important;
   	margin-left: 15% !important;
-  	margin-bottom: 25px !important;
+  	margin-bottom: 23px !important;
 }
 
 .page-content.login-screen-content .item-inner {
@@ -128,11 +128,13 @@ li, a {
 	padding-right: 8px;
     width: 50%;
     padding: 8px;
-    min-height: 44px;
+    margin-top: 21px !important;
+    margin-bottom: 22px !important;
+    height: 32px !important;
+    min-height: 0px !important;
     border-style: solid;
     border: 3px #b1b1b1;
     border-radius: 5px !important;
-    margin-bottom: 20px !important;
     width: 70% !important;
 }
 
@@ -144,12 +146,24 @@ a.item-link.list-button {
     text-align: center;
     color: #007aff;
     display: block;
-    line-height: 43px;
+    line-height: 31px;
 	border-style: solid;
     border: 3px #b1b1b1;
     border-radius: 5px !important;
     width: 45% !important;
+    margin-top: 45px !important;
     margin-left: 27% !important;
+}
+
+.login-list-block .login-item-content {
+  margin-top: 35px !important;
+  margin-bottom: 15px !important;
+  height: 12px !important;
+  min-height: 0px !important;
+}
+
+.list-block .item-input {
+  margin-top: -12px !important;
 }
 
 /* Søoegekriterier */
@@ -179,7 +193,7 @@ a.item-link.list-button {
   padding-top: 5px !important;
 }
 
-.list-block {
+.list-block .list-block-label {
 	   margin: 0px 0 !important;
 }
 .item-slidesearch {

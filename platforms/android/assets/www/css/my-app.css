@@ -102,6 +102,55 @@ li, a {
 	margin-left: 5px !important;
 }
 
+/* Login */
+
+.page-content.login-screen-content {
+	background-color: #1d1d1b !important;
+}
+
+.login-screen-title, .login-screen-title img {
+	height: 200px !important;
+	width: auto !important;
+	margin-top: -10px !important;
+  	margin-bottom: 50px !important;
+}
+
+.page-content.login-screen-content .list-block img {
+	height: 30px !important;
+  	width: auto !important;
+  	margin-right: 5px !important;
+  	margin-left: 15% !important;
+  	margin-bottom: 25px !important;
+}
+
+.page-content.login-screen-content .item-inner {
+	background-color: #ffffff !important;
+	padding-right: 8px;
+    width: 50%;
+    padding: 8px;
+    min-height: 44px;
+    border-style: solid;
+    border: 3px #b1b1b1;
+    border-radius: 5px !important;
+    margin-bottom: 20px !important;
+    width: 70% !important;
+}
+
+a.item-link.list-button {
+	background-color: #b1b1b1 !important;
+	color: #1d1d1b !important;
+	font-weight: bolder !important;
+	padding: 0 15px;
+    text-align: center;
+    color: #007aff;
+    display: block;
+    line-height: 43px;
+	border-style: solid;
+    border: 3px #b1b1b1;
+    border-radius: 5px !important;
+    width: 45% !important;
+    margin-left: 27% !important;
+}
 
 /* Søoegekriterier */
 
