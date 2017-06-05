@@ -84,6 +84,34 @@ li, a {
   background-size: contain !important;
 }
 
+/* indstillinger m.m. */
+
+.indstillinger-knap {
+    padding-right: 8px;
+    padding: 8px;
+    padding-bottom: 5px !important;
+    margin-top: 21px !important;
+    margin-bottom: -17px !important;
+    height: 13px !important;
+    min-height: 0px !important;
+    border: 2px solid #b1b1b1 !important;
+    border-radius: 5px !important;
+    width: 70% !important;
+}
+
+.indstillinger-input {
+  padding-bottom: 30px !important;
+}
+
+.indstillinger-content-block {
+  padding-bottom: 8% !important;
+}
+
+.indstillinger-list-block {
+  margin-top: 0% !important;
+  margin-bottom: 7% !important;
+}
+
 .indstillinger, .kontakt, .soegekriterier {
 	height: 40px !important;
 	width: 60% !important;
@@ -99,11 +127,16 @@ li, a {
 }
 
 .kontakt, .kontakt img {
-	margin-right: .11% !important;
+	margin-right: -13% !important;
 }
 
 .soegekriterier, .soegekriterier img {
 	margin-left: 3% !important;
+}
+
+.indstillinger-elementer {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 /* Login */
@@ -172,7 +205,7 @@ a.item-link.list-button {
 
 /* Søoegekriterier */
 
-.search-content {
+.custom-slider {
   padding-left: 0px !important;
 }
 
@@ -197,12 +230,13 @@ a.item-link.list-button {
   padding-top: 5px !important;
 }
 
+
 .list-block .list-block-label {
 	   margin: 0px 0 !important;
 }
 .item-slidesearch {
     width: 100% !important;
-    text-align: center !important;
+    text-align: left !important;
     padding-left: 7px !important;
     margin: 0px 0 !important;
     padding-bottom: 15px !important;
