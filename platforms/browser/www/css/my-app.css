@@ -10,11 +10,12 @@ li, a {
 }
 
 .content-block {
-	margin-top: 0 !important;
+	margin: 0 !important;
 }
 
 .panel-right .content-block p {
-	font-size: 18px !important;
+	font-size: 14px !important;
+  font-size: 4vw !important;
 	font-weight: bold !important;
 	text-align: left !important;
 	margin-top: 0px !important;
@@ -22,7 +23,7 @@ li, a {
 	border-top-width: 1px;
 	border-top-color: #000000;
 	border-top-style: solid;
-	padding-top: 25px !important;
+	padding-top: 19px !important;
 	padding-bottom: 5px !important;
 	padding-left: 20px !important;
 }
@@ -75,14 +76,45 @@ li, a {
 }
 
 .panel {
-	height: 72% !important;
+  position: absolute !important;
+  height: auto !important;
+  width: auto !important;
 	margin-top: 69px !important;
 	background: #1d1d1b !important;
+  background-size: contain !important;
+}
+
+/* indstillinger m.m. */
+
+.indstillinger-knap {
+    padding-right: 8px;
+    padding: 8px;
+    padding-bottom: 5px !important;
+    margin-top: 21px !important;
+    margin-bottom: -17px !important;
+    height: 13px !important;
+    min-height: 0px !important;
+    border: 2px solid #b1b1b1 !important;
+    border-radius: 5px !important;
+    width: 70% !important;
+}
+
+.indstillinger-input {
+  padding-bottom: 30px !important;
+}
+
+.indstillinger-content-block {
+  padding-bottom: 8% !important;
+}
+
+.indstillinger-list-block {
+  margin-top: 0% !important;
+  margin-bottom: 7% !important;
 }
 
 .indstillinger, .kontakt, .soegekriterier {
 	height: 40px !important;
-	width: auto !important;
+	width: 60% !important;
 }
 
 .indstillinger img, .kontakt img, .soegekriterier img {
@@ -91,15 +123,20 @@ li, a {
 }
 
 .indstillinger, .indstillinger img {
-	margin-left: 40px !important;
+	margin-left: 31% !important;
 }
 
 .kontakt, .kontakt img {
-	margin-right: 10px !important;
+	margin-right: -13% !important;
 }
 
 .soegekriterier, .soegekriterier img {
-	margin-left: 5px !important;
+	margin-left: 3% !important;
+}
+
+.indstillinger-elementer {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 /* Login */
@@ -120,7 +157,7 @@ li, a {
   	width: auto !important;
   	margin-right: 5px !important;
   	margin-left: 15% !important;
-  	margin-bottom: 25px !important;
+  	margin-bottom: 23px !important;
 }
 
 .page-content.login-screen-content .item-inner {
@@ -128,11 +165,13 @@ li, a {
 	padding-right: 8px;
     width: 50%;
     padding: 8px;
-    min-height: 44px;
+    margin-top: 21px !important;
+    margin-bottom: 22px !important;
+    height: 32px !important;
+    min-height: 0px !important;
     border-style: solid;
     border: 3px #b1b1b1;
     border-radius: 5px !important;
-    margin-bottom: 20px !important;
     width: 70% !important;
 }
 
@@ -144,17 +183,29 @@ a.item-link.list-button {
     text-align: center;
     color: #007aff;
     display: block;
-    line-height: 43px;
+    line-height: 31px;
 	border-style: solid;
     border: 3px #b1b1b1;
     border-radius: 5px !important;
     width: 45% !important;
+    margin-top: 45px !important;
     margin-left: 27% !important;
+}
+
+.login-list-block .login-item-content {
+  margin-top: 35px !important;
+  margin-bottom: 15px !important;
+  height: 12px !important;
+  min-height: 0px !important;
+}
+
+.list-block .item-input {
+  margin-top: -12px !important;
 }
 
 /* Søoegekriterier */
 
-.search-content {
+.custom-slider {
   padding-left: 0px !important;
 }
 
@@ -179,13 +230,13 @@ a.item-link.list-button {
   padding-top: 5px !important;
 }
 
-.list-block {
+
+.list-block .list-block-label {
 	   margin: 0px 0 !important;
 }
 .item-slidesearch {
     width: 100% !important;
-    text-align: center !important;
-    padding-left: 7px !important;
+    text-align: left !important;
     margin: 0px 0 !important;
     padding-bottom: 15px !important;
 }
