@@ -10,11 +10,12 @@ li, a {
 }
 
 .content-block {
-	margin-top: 0 !important;
+	margin: 0 !important;
 }
 
 .panel-right .content-block p {
-	font-size: 18px !important;
+	font-size: 14px !important;
+  font-size: 4vw !important;
 	font-weight: bold !important;
 	text-align: left !important;
 	margin-top: 0px !important;
@@ -22,7 +23,7 @@ li, a {
 	border-top-width: 1px;
 	border-top-color: #000000;
 	border-top-style: solid;
-	padding-top: 25px !important;
+	padding-top: 19px !important;
 	padding-bottom: 5px !important;
 	padding-left: 20px !important;
 }
@@ -75,14 +76,17 @@ li, a {
 }
 
 .panel {
-	height: 72% !important;
+  position: absolute !important;
+  height: auto !important;
+  width: auto !important;
 	margin-top: 69px !important;
 	background: #1d1d1b !important;
+  background-size: contain !important;
 }
 
 .indstillinger, .kontakt, .soegekriterier {
 	height: 40px !important;
-	width: auto !important;
+	width: 60% !important;
 }
 
 .indstillinger img, .kontakt img, .soegekriterier img {
