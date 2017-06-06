@@ -20,6 +20,7 @@ $$('.panel-close').on('click', function () {
     var animated = false;
     myApp.closePanel(animated);
 });
+     
 
 
 /*

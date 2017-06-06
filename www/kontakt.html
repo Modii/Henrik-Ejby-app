@@ -31,32 +31,35 @@
         <div class="content-block-inner">
 
 
- <div class="submenu">
-    <div class="submenu1">
-      <ul>
-        <li><a href="henrik.html">HENRIK</a></li> <br>
-              <div class="henrik"> <a href="henrik.html"> <img src="img/he.png"> </a> </div>
-      </ul>
+ <div class="center">Swipeable Tabs</div>
+        <div class="subnavbar">
+          <!-- Buttons row as tabs controller in Subnavbar-->
+          <div class="buttons-row">
+            <!-- Link to 1st tab, active -->
+            <a href="#tab1" class="button active tab-link">KONTOR</a>
+            <!-- Link to 2nd tab -->
+            <a href="#tab2" class="button tab-link">HENRIK</a>
+            <!-- Link to 3rd tab -->
+            <a href="#tab3" class="button tab-link">PER</a>
+            <!-- Link to 4th tab -->
+            <a href="#tab4" class="button tab-link">LINE</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-      <div class="submenu2">
-      <ul>
-        <li><a href="per.html">PER</a></li> <br>
-              <div class="per"> <a href="per.html"> <img src="img/pe.png"> </a> </div>
-      </ul>
-    </div>
-
-      <div class="submenu3">
-      <ul>
-        <li><a href="line.html">LINE</a></li> <br>
-              <div class="line"> <a href="line.html"> <img src="img/line.png"> </a> </div>
-      </ul>
-    </div>
-</div>
-
-
-
-
+    <!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
+    <div class="tabs-swipeable-wrap">
+      <!-- Tabs, tabs wrapper -->
+      <div class="tabs">
+        <!-- Tab 1, active by default -->
+        <div id="tab1" class="page-content tab active">
+          <div class="content-block">
+<div class="test">
+    <div class="img-row">
+      <div class="henrik-img"><img src="img/he.png"></div>
+      <div class="per-img"><img src="img/pe.png"></div>
+      <div class="line-img"><img src="img/line.png"></div>
+    </dib>
 
   <div class="contact-text">
       <b>Hos Henrik Ejby er vi specialister i at sælge din bolig. Hvor den ligger er ingen hindring. Vi dækker hele Sydsjælland, Bogø, Møn og Lolland Falster.</b>
@@ -71,6 +74,33 @@
       <p>4760 Vordingborg</p>
       <p><b>Telefon</b> 71 99 47 60</p>
   </div>
+</div>
+          </div>
+        </div>
+        <!-- Tab 2 -->
+        <div id="tab2" class="page-content tab">
+          <div class="content-block">
+            ... Tab 2 content ...
+          </div>
+        </div>
+        <!-- Tab 3 -->
+        <div id="tab3" class="page-content tab">
+          <div class="content-block">
+            ... Tab 3 content ...
+          </div>
+        </div>
+        <!-- Tab 4 -->
+        <div id="tab4" class="page-content tab">
+          <div class="content-block">
+            ... Tab 4 content ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
 
 
         </div>
