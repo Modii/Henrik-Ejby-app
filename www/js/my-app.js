@@ -20,7 +20,7 @@ $$('.panel-close').on('click', function () {
     var animated = false;
     myApp.closePanel(animated);
 });
-     
+
 
 google.maps.event.addDomListener(window,'load',initMap);
 
@@ -34,7 +34,16 @@ var map, infoWindow;
            ['<div class="test">ejbybolig3</div>',55.001000, 11.961219, 1],
            ['<div class="test">ejbybolig4</div>',55.001951, 11.956188, 1],
            ['<div class="test">ejbybolig5</div>',55.006123, 11.969393, 1],
-           ['<div class="test">ejbybolig6</div>',54.759255, 11.876671, 1],
+
+           ['<div class="naverparken-img">' +
+           '<img src="img/boliger/naverparken.png">' +
+           '<p> Naverparken 17, Nyråd <br>'+
+           '4760 Vordingborg <br>'+
+           'Kontantpris: 1.295.000 <br>'+
+           'Ejer udgifter pr. md.: 2355,72 <br>'+
+           'Boligareal: 142 <br></p>' +
+           '<a href="#" class="laesmereknap"> LÆS MERE </a></div>',54.759255, 11.876671, 1],
+
            ['<div class="test">ejbybolig7</div>',54.768241, 11.869110, 1],
         ];
 
@@ -56,7 +65,7 @@ var map, infoWindow;
         infoBubble = new InfoBubble({
           map: map,
           shadowStyle: 0,
-          padding: 20,
+          padding: 15,
           backgroundColor: '#fff',
           borderRadius: 0,
           arrowSize: 12,
