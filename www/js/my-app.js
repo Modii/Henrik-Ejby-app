@@ -39,6 +39,19 @@ function initMap() {
 */
 var map, infoWindow;
       function initMap() {
+
+        /* datasæt til markers herunder */
+        var locations = [
+           ['ejbybolig1',55.006765, 11.958317, 1],
+           ['ejbybolig1',55.002286, 11.981101, 1],
+           ['ejbybolig1',55.001000, 11.961219, 1],
+           ['ejbybolig1',55.001951, 11.956188, 1],
+           ['ejbybolig1',55.006123, 11.969393, 1],
+           ['ejbybolig1',54.759255, 11.876671, 1],
+           ['ejbybolig1',54.768241, 11.869110, 1],
+        ];
+
+        /* her oprettes vores kort */
         map = new google.maps.Map(document.getElementById('map'), {
           disableDefaultUI: true,
           zoom: 12,
@@ -49,9 +62,44 @@ var map, infoWindow;
         });
         map.mapTypes.set('hybrid');
         map.setMapTypeId('hybrid');
-        infoWindow = new google.maps.InfoWindow;
+        var infoWindow = new google.maps.InfoWindow;
 
-        // Try HTML5 geolocation.
+        var marker, i;
+
+        /* Dette for loop opretter bolig markers */
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+            icon: 'img/boligmarker.png',
+            animation:google.maps.Animation.DROP
+          });
+
+          /* følgende loop gør så infovinduet lukkes ved klik på map */
+          google.maps.event.addListener(marker, 'click', function() {
+                     if(!marker.open){
+                         infoWindow.open(map,marker);
+                         marker.open = true;
+                     }
+                     else{
+                         infoWindow.close();
+                         marker.open = false;
+                     }
+                     google.maps.event.addListener(map, 'click', function() {
+                         infoWindow.close();
+                         marker.open = false;
+                     });
+         });
+          /* denne funktion venter på klik og åbner et info vindue til boligerne når der klikkes */
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infoWindow.setContent(locations[i][0]);
+              infoWindow.open(map, marker);
+            }
+          })(marker, i));
+        }
+
+        // geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -62,39 +110,14 @@ var map, infoWindow;
             infoWindow.setPosition(pos);
             var iconBase = 'img/';
             var icons = {
-              ejbybolig: {
-                icon: iconBase + 'boligmarker.png'
-              },
-              library: {
+              hermarker: {
                 icon: iconBase + 'hermarker.png'
               }
-
             };
             var features = [
               {
                 position: new google.maps.LatLng(pos),
-                type: 'library'
-              }, {
-                position: new google.maps.LatLng(55.006765, 11.958317),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(55.002286, 11.981101),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(55.001000, 11.961219),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(55.001951, 11.956188),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(55.006123, 11.969393),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(54.759255, 11.876671),
-                type: 'ejbybolig'
-              }, {
-                position: new google.maps.LatLng(54.768241, 11.869110),
-                type: 'ejbybolig'
+                type: 'hermarker'
               }
             ];
                   // Create markers.
