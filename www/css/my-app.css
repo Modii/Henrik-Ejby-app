@@ -87,6 +87,27 @@ li, a {
   background-size: contain !important;
 }
 
+/* læs mere på kort */
+
+.merebolig-tekst {
+	padding-bottom: 5px;
+}
+
+.laesmereknap {
+background-color: #1d1d1b;
+padding: 4% 39%;
+}
+
+.js-info-bubble-close {
+right: -5px !important;
+top: -5px !important;
+width: 10%;
+}
+.merebolig-img {
+width: 100%;
+}
+
+
 /* indstillinger m.m. */
 
 .indstillinger-knap {
