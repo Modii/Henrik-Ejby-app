@@ -21,34 +21,20 @@ $$('.panel-close').on('click', function () {
     myApp.closePanel(animated);
 });
 
+google.maps.event.addDomListener(window,'load',initMap);
 
-/*
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 55.001, lng: 11.981},
-    zoom: 8
-  });
-  var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(55.001383, 11.981929),
-      map: map,
-      title: "This is a marker!",
-      animation: google.maps.Animation.DROP
-  });
-}
-*/
 var map, infoWindow;
       function initMap() {
 
         /* datasæt til markers herunder */
         var locations = [
-           ['ejbybolig1',55.006765, 11.958317, 1],
-           ['ejbybolig1',55.002286, 11.981101, 1],
-           ['ejbybolig1',55.001000, 11.961219, 1],
-           ['ejbybolig1',55.001951, 11.956188, 1],
-           ['ejbybolig1',55.006123, 11.969393, 1],
-           ['ejbybolig1',54.759255, 11.876671, 1],
-           ['ejbybolig1',54.768241, 11.869110, 1],
+           ['<div class="test">ejbybolig1</div>',55.006765, 11.958317, 1],
+           ['<div class="test">ejbybolig2</div>',55.002286, 11.981101, 1],
+           ['<div class="test">ejbybolig3</div>',55.001000, 11.961219, 1],
+           ['<div class="test">ejbybolig4</div>',55.001951, 11.956188, 1],
+           ['<div class="test">ejbybolig5</div>',55.006123, 11.969393, 1],
+           ['<div class="test">ejbybolig6</div>',54.759255, 11.876671, 1],
+           ['<div class="test">ejbybolig7</div>',54.768241, 11.869110, 1],
         ];
 
         /* her oprettes vores kort */
@@ -64,6 +50,24 @@ var map, infoWindow;
         map.setMapTypeId('hybrid');
         var infoWindow = new google.maps.InfoWindow;
 
+
+        /* infobubble er vores læs mere vinduer på kortet, herunder customizes de */
+        infoBubble = new InfoBubble({
+          map: map,
+          shadowStyle: 0,
+          padding: 20,
+          backgroundColor: '#fff',
+          borderRadius: 0,
+          arrowSize: 12,
+          borderWidth: 1,
+          borderColor: '#fff',
+          disableAutoPan: true,
+          hideCloseButton: false,
+          arrowPosition: 30,
+          backgroundClassName: 'boligmarkerbackground',
+          arrowStyle: 0
+        });
+
         var marker, i;
 
         /* Dette for loop opretter bolig markers */
@@ -75,26 +79,28 @@ var map, infoWindow;
             animation:google.maps.Animation.DROP
           });
 
+
           /* følgende loop gør så infovinduet lukkes ved klik på map */
           google.maps.event.addListener(marker, 'click', function() {
                      if(!marker.open){
-                         infoWindow.open(map,marker);
+                         infoBubble.open(map,marker);
                          marker.open = true;
                      }
                      else{
-                         infoWindow.close();
+                         infoBubble.close();
                          marker.open = false;
                      }
                      google.maps.event.addListener(map, 'click', function() {
-                         infoWindow.close();
+                         infoBubble.close();
                          marker.open = false;
                      });
          });
-          /* denne funktion venter på klik og åbner et info vindue til boligerne når der klikkes */
+          /* denne funktion venter på klik og åbner et info vindue til boligerne */
           google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-              infoWindow.setContent(locations[i][0]);
-              infoWindow.open(map, marker);
+
+              infoBubble.setContent(locations[i][0]);
+              infoBubble.open(map, marker);
             }
           })(marker, i));
         }
