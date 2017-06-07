@@ -119,7 +119,7 @@ width: 100%;
     height: 13px !important;
     min-height: 0px !important;
     border: 2px solid #b1b1b1 !important;
-    border-radius: 5px !important;
+    border-radius: 2px !important;
     width: 70% !important;
 }
 
@@ -195,7 +195,7 @@ width: 100%;
     min-height: 0px !important;
     border-style: solid;
     border: 3px #b1b1b1;
-    border-radius: 5px !important;
+    border-radius: 2px !important;
     width: 70% !important;
 }
 
@@ -210,7 +210,7 @@ a.item-link.list-button {
     line-height: 31px;
 	border-style: solid;
     border: 3px #b1b1b1;
-    border-radius: 5px !important;
+    border-radius: 2px !important;
     width: 45% !important;
     margin-top: 45px !important;
     margin-left: 27% !important;
@@ -432,11 +432,29 @@ a.item-link.list-button {
 	bottom: 280px !important;
 	font-size: 17px !important;
 	font-weight: bold !important;
-	background-color: #b1b1b1 !important;
-	color: #1d1d1b !important;
+	background-color: #1d1d1b !important;
+	color: #ffffff !important;
 	border: 1px solid #1d1d1b !important;
-	border-radius: 5px !important;
+	border-radius: 2px !important;
 	line-height: 31px !important;
 	}
+
+.telefon-opkald-kontor {
+	text-align: center !important;
+	position: relative !important;
+	float: left !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	height: auto !important;
+	bottom: 0px !important;
+	font-size: 17px !important;
+	font-weight: bold !important;
+	background-color: #1d1d1b !important;
+	color: #ffffff !important;
+	border: 1px solid #1d1d1b !important;
+	border-radius: 2px !important;
+	line-height: 31px !important;
+}
 
 /* til google maps */
