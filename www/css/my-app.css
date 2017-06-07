@@ -114,11 +114,12 @@ width: 100%;
     padding-right: 8px;
     padding: 8px;
     padding-bottom: 5px !important;
+		padding-left: 3px;
     margin-top: 21px !important;
     margin-bottom: -17px !important;
     height: 13px !important;
     min-height: 0px !important;
-    border: 2px solid #b1b1b1 !important;
+    border: 1px solid #b1b1b1 !important;
     border-radius: 2px !important;
     width: 70% !important;
 }
@@ -127,6 +128,9 @@ width: 100%;
   padding-bottom: 30px !important;
 }
 
+input::placeholder {
+	color: #b1b1b1;
+}
 .indstillinger-content-block {
   padding-bottom: 8% !important;
 }
@@ -242,6 +246,7 @@ a.item-link.list-button {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   overflow: visible !important;
+	color: #1d1d1b;
 }
 
 .searchswitch2 {
@@ -261,8 +266,9 @@ a.item-link.list-button {
 .item-slidesearch {
     width: 100% !important;
     text-align: left !important;
-    margin: 0px 0 !important;
+    margin: 0px 4px !important;
     padding-bottom: 15px !important;
+		color: #1d1d1b;
 }
 .item-inner {
   display: inline-block !important;
