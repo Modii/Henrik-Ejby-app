@@ -318,14 +318,36 @@ a.item-link.list-button {
 	}
 */
 
+	.button.tab-link.active {
+		color: #1d1d1b !important;
+		background-color: #ffffff !important;
+		border: 0px solid #1d1d1b !important;
+	}
 
-	.henrik, .per, .line, .henrik img, .per img, .line img {
-		display: inline-block !important;
-		padding: 2px !important;
-		height: auto !important;
-		width: 100% !important;
-		margin-bottom: -8px !important;
-		position: center !important;
+	.button {
+		border: 0px solid #b1b1b1 !important;
+	}
+
+	.buttons-row {
+		margin-bottom:  !important;
+		position: fixed !important;
+		margin-left: -5px !important;
+		top: 80px !important;
+		background-color: #ffffff !important;
+	}
+
+	.subnavbar {
+		margin-bottom:  !important;
+		position: fixed !important;
+		margin-left: -3px !important;
+		top: 70px !important;
+		background-color: #ffffff !important;
+		height: 40px !important;
+	}
+
+	.henrik-img, .per-img, .line-img {
+		margin-top: -40px !important;
+		margin-bottom: 10px !important;
 	}
 
 .henrik, .per, .line {
@@ -346,6 +368,11 @@ a.item-link.list-button {
 		width: 32% !important;
 	}
 
+	.henrik-img img, .per-img img, .line-img img {
+		display: inline-block !important;
+		width: 100% !important;
+	}
+
 	.contact-text {
 		padding-top: 20px !important;
 		padding-bottom: 20px !important;
@@ -364,5 +391,52 @@ a.item-link.list-button {
 		margin-bottom: 3px;
 	}
 
+	.henrikejby-text {
+		float: left !important;
+		width: 50% !important;
+		padding-left: 20px !important;
+		padding-top: 40px !important;
+	}
+
+	.henrikejby-text h1 {
+		font-size: 18px !important;
+		font-weight: bold !important;
+	}
+
+	.henrik-img-kontakt {
+		text-align: right !important;
+		position: relative !important;
+    float: right !important;
+		right: 0px !important;
+		width: 95% !important;
+		height: 250px !important;
+		border-bottom: 5px solid #1d1d1b !important;
+    bottom: 250px !important;
+		margin-bottom: 50px !important;
+	}
+
+	.henrik-img-kontakt img {
+		position: relative !important;
+    float: right !important;
+		height: 100% !important;
+	}
+
+.telefon-opkald {
+	text-align: center !important;
+	position: relative !important;
+	float: left !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	height: auto !important;
+	bottom: 280px !important;
+	font-size: 17px !important;
+	font-weight: bold !important;
+	background-color: #b1b1b1 !important;
+	color: #1d1d1b !important;
+	border: 1px solid #1d1d1b !important;
+	border-radius: 5px !important;
+	line-height: 31px !important;
+	}
 
 /* til google maps */
