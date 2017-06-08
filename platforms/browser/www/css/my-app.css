@@ -1,6 +1,8 @@
+.page-content {
+	background-color: #ffffff !important;
+}
 
-#map
-{
+#map {
     width: 100%;
         height: 96%;
 }
@@ -59,6 +61,7 @@ li, a {
 	margin-right: 25px !important;
 }
 
+
 .icon.icon-bars {
 	height: 50px !important;
 	width: 50px !important;
@@ -84,25 +87,50 @@ li, a {
   background-size: contain !important;
 }
 
+/* læs mere på kort */
+
+.merebolig-tekst {
+	padding-bottom: 5px;
+}
+
+.laesmereknap {
+background-color: #1d1d1b;
+padding: 4% 39%;
+}
+
+.js-info-bubble-close {
+right: -5px !important;
+top: -5px !important;
+width: 10%;
+}
+.merebolig-img {
+width: 100%;
+}
+
+
 /* indstillinger m.m. */
 
 .indstillinger-knap {
     padding-right: 8px;
     padding: 8px;
     padding-bottom: 5px !important;
+		padding-left: 3px;
     margin-top: 21px !important;
     margin-bottom: -17px !important;
     height: 13px !important;
     min-height: 0px !important;
-    border: 2px solid #b1b1b1 !important;
-    border-radius: 5px !important;
+    border: 1px solid #b1b1b1 !important;
+    border-radius: 2px !important;
     width: 70% !important;
 }
 
 .indstillinger-input {
-  padding-bottom: 30px !important;
+  padding-bottom: 25px !important;
 }
 
+input::placeholder {
+	color: #b1b1b1;
+}
 .indstillinger-content-block {
   padding-bottom: 8% !important;
 }
@@ -171,7 +199,7 @@ li, a {
     min-height: 0px !important;
     border-style: solid;
     border: 3px #b1b1b1;
-    border-radius: 5px !important;
+    border-radius: 2px !important;
     width: 70% !important;
 }
 
@@ -186,7 +214,7 @@ a.item-link.list-button {
     line-height: 31px;
 	border-style: solid;
     border: 3px #b1b1b1;
-    border-radius: 5px !important;
+    border-radius: 2px !important;
     width: 45% !important;
     margin-top: 45px !important;
     margin-left: 27% !important;
@@ -218,6 +246,7 @@ a.item-link.list-button {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   overflow: visible !important;
+	color: #1d1d1b;
 }
 
 .searchswitch2 {
@@ -237,8 +266,9 @@ a.item-link.list-button {
 .item-slidesearch {
     width: 100% !important;
     text-align: left !important;
-    margin: 0px 0 !important;
+    margin: 0px 4px !important;
     padding-bottom: 15px !important;
+		color: #1d1d1b;
 }
 .item-inner {
   display: inline-block !important;
@@ -247,6 +277,7 @@ a.item-link.list-button {
 .search-inner {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
+	overflow: visible !important;
 }
 
 .button.button-fill.color-green {
@@ -268,6 +299,7 @@ a.item-link.list-button {
 
 /* Kontakt */
 
+/*
 	.submenu {
 		overflow: hidden;
 		display: block;
@@ -291,26 +323,61 @@ a.item-link.list-button {
     width: 60px;
     padding: 10px !important;
 	}
+*/
 
+	.button.tab-link.active {
+		color: #1d1d1b !important;
+		background-color: #ffffff !important;
+		border: 0px solid #1d1d1b !important;
+	}
 
+	.button {
+		border: 0px solid #b1b1b1 !important;
+	}
 
-	.henrik, .per, .line, .henrik img, .per img, .line img {
-		display: inline-block !important;
-		padding: 2px !important;
-		height: auto !important;
-		width: 100% !important;
-		margin-bottom: -8px !important;
-		position: center !important;
+	.buttons-row {
+		margin-bottom:  !important;
+		position: fixed !important;
+		margin-left: -5px !important;
+		top: 80px !important;
+		background-color: #ffffff !important;
+	}
+
+	.subnavbar {
+		margin-bottom:  !important;
+		position: fixed !important;
+		margin-left: -3px !important;
+		top: 70px !important;
+		background-color: #ffffff !important;
+		height: 40px !important;
+	}
+
+	.henrik-img, .per-img, .line-img {
+		margin-top: -40px !important;
+		margin-bottom: 10px !important;
 	}
 
 .henrik, .per, .line {
 	margin-top: 10px !important;
 }
 
+/*
 	.submenu1, .submenu2, .submenu3 {
 		display: inline-block !important;
 		float: left !important;
 		width: 33% !important;
+	}
+*/
+
+
+	.henrik-img, .per-img, .line-img {
+		display: inline-block !important;
+		width: 32% !important;
+	}
+
+	.henrik-img img, .per-img img, .line-img img {
+		display: inline-block !important;
+		width: 100% !important;
 	}
 
 	.contact-text {
@@ -331,5 +398,70 @@ a.item-link.list-button {
 		margin-bottom: 3px;
 	}
 
+	.henrikejby-text {
+		float: left !important;
+		width: 50% !important;
+		padding-left: 20px !important;
+		padding-top: 40px !important;
+	}
+
+	.henrikejby-text h1 {
+		font-size: 18px !important;
+		font-weight: bold !important;
+	}
+
+	.henrik-img-kontakt {
+		text-align: right !important;
+		position: relative !important;
+    float: right !important;
+		right: 0px !important;
+		width: 95% !important;
+		height: 250px !important;
+		border-bottom: 5px solid #1d1d1b !important;
+    bottom: 250px !important;
+		margin-bottom: 50px !important;
+	}
+
+	.henrik-img-kontakt img {
+		position: relative !important;
+    float: right !important;
+		height: 100% !important;
+	}
+
+.telefon-opkald {
+	text-align: center !important;
+	position: relative !important;
+	float: left !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	height: auto !important;
+	bottom: 280px !important;
+	font-size: 17px !important;
+	font-weight: bold !important;
+	background-color: #1d1d1b !important;
+	color: #ffffff !important;
+	border: 1px solid #1d1d1b !important;
+	border-radius: 2px !important;
+	line-height: 31px !important;
+	}
+
+.telefon-opkald-kontor {
+	text-align: center !important;
+	position: relative !important;
+	float: left !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	height: auto !important;
+	bottom: 0px !important;
+	font-size: 17px !important;
+	font-weight: bold !important;
+	background-color: #1d1d1b !important;
+	color: #ffffff !important;
+	border: 1px solid #1d1d1b !important;
+	border-radius: 2px !important;
+	line-height: 31px !important;
+}
 
 /* til google maps */
